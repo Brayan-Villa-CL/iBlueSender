@@ -1,0 +1,72 @@
+<Document disableHistory="true">
+	<Protocol><plist version="1.0">
+  <dict/>
+</plist></Protocol>
+	<ScrollView bottomInset="0" horzScroll="as needed" leftInset="0" rightInset="0" stretchiness="1" topInset="0" vertScroll="as needed">
+		<View>
+			<Include target="main" url="https://static.deviceservices.apple.com/deviceservices/stylesheets/fontstyles.css"/>
+			<MatrixView bottomInset="0" leftInset="0" rightInset="0" rowFormat="100%,*" topInset="0" viewName="iphoneSystemsWizard">
+				<VBoxView>
+					<HBoxView leftInset="50" minWidth="774" rightInset="50">
+						<View stretchiness="1"/>
+						<VBoxView leftInset="0" minWidth="774" rightInset="0" topInset="0">
+							<PictureView height="12" rightInset="2" topInset="8" url="https://static.deviceservices.apple.com/deviceservices/images/lock.png" width="11"/>
+							<HBoxView leftInset="0" rightInset="0" topInset="3">
+								<PictureView height="66" topInset="0" url="https://static.deviceservices.apple.com/deviceservices/images/apple-logo.png" width="42"/>
+								<View stretchiness="1"/>
+								<PictureView height="37" rightInset="2" topInset="8" url="https://static.deviceservices.apple.com/deviceservices/images/logo.jpg" width="120"/>
+							</HBoxView>
+						</VBoxView>
+						<View stretchiness="1"/>
+					</HBoxView>
+					<HBoxView leftInset="50" minWidth="770" rightInset="50">
+						<View stretchiness="1"/>
+						<VBoxView leftInset="0" rightInset="0" topInset="0">
+							<View topInset="15">
+								<View borderColor="999999" borderWidth="1" bottomInset="0" leftInset="0" rightInset="0" topInset="0">
+									<VBoxView bottomInset="50" leftInset="85" minWidth="600" rightInset="85" topInset="48">
+										<TextView bottomInset="0" leftInset="0" normalStyle="SFUI18" rightInset="0" textJust="center" topInset="0">
+											<b>There is a problem with your device.</b>
+										</TextView>
+										<View height="30"/>
+										<TextView bottomInset="0" leftInset="0" rightInset="0" styleSet="normalSFUI13" textJust="center" topInset="0">Please visit the <OpenURL url="https://support.apple.com/kb/index?page=servicefaq&geo=United_States&product=iphone"><b>Service Answer Center</b></OpenURL> to find answers to all your questions about service options, warranty and other processes in your country.</TextView>
+										<TextView bottomInset="0" leftInset="0" rightInset="0" styleSet="normalSFUI13" textJust="center" topInset="0">To find your nearest Apple Store, <OpenURL url="https://www.apple.com/retail/"><b>click here</b></OpenURL>.</TextView>
+										<TextView bottomInset="0" leftInset="0" rightInset="0" styleSet="normalSFUI13" textJust="center" topInset="0"></TextView>
+										<View stretchiness="1"/>
+									</VBoxView>
+								</View>
+								<PictureView height="8" leftInset="0" topInset="0" url="https://static.deviceservices.apple.com/deviceservices/images/boxline_ffffff_topl.png" width="8"/>
+								<PictureView height="8" rightInset="0" topInset="0" url="https://static.deviceservices.apple.com/deviceservices/images/boxline_ffffff_topr.png" width="8"/>
+								<PictureView bottomInset="0" height="8" leftInset="0" url="https://static.deviceservices.apple.com/deviceservices/images/boxline_ffffff_botl.png" width="8"/>
+								<PictureView bottomInset="0" height="8" rightInset="0" url="https://static.deviceservices.apple.com/deviceservices/images/boxline_ffffff_botr.png" width="8"/>
+							</View>
+						</VBoxView>
+						<View stretchiness="1"/>
+					</HBoxView>
+				</VBoxView>
+				<VBoxView leftInset="0" rightInset="0">
+					<View height="88"/>
+					<TextView leftInset="0" styleSet="basic9" textJust="center" topInset="2">ErrorKey: <SetFontStyle normalStyle="gray">SIGNATURE_VERIFICATION_FAILED</SetFontStyle></TextView>
+					<TextView leftInset="0" styleSet="basic9" textJust="center" topInset="2">MessageKey: <SetFontStyle normalStyle="gray">ALEndPointErrorPage.signatureVerificationFailed</SetFontStyle></TextView>
+					<TextView leftInset="0" styleSet="basic9" textJust="center" topInset="2">UnbrickReasonDetail: <SetFontStyle normalStyle="gray">Device activation failed. Please contact support.</SetFontStyle></TextView>
+					<View height="8"/>
+					<View height="30"/>
+					<HBoxView bottomInset="0">
+						<View stretchiness="1"/>
+						<TextView leftInset="0" styleSet="basic9" textJust="center" topInset="2">Copyright</TextView>
+						<View width="2"/>
+						<TextView leftInset="0" styleSet="basic9" textJust="center" topInset="2"/>
+						<View width="2"/>
+						<TextView leftInset="0" styleSet="basic9" textJust="center" topInset="2">2019 Apple Inc.
+							<OpenURL target="main" url="http://www.apple.com/legal/">All rights reserved.</OpenURL>
+							| 
+							<OpenURL target="main" url="http://www.apple.com/legal/iphone/us/privacy">Privacy Policies</OpenURL>
+							| 
+							<OpenURL target="main" url="http://www.apple.com/legal/iphone/us/terms">Terms &amp; Conditions</OpenURL></TextView>
+						<View stretchiness="1"/>
+					</HBoxView>
+				</VBoxView>
+			</MatrixView>
+		</View>
+	</ScrollView>
+</Document>
