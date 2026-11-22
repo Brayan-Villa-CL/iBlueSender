@@ -14,7 +14,6 @@ import pbkdf2
 from Crypto.Hash import SHA256
 import srp._pysrp as srp
 from base64 import b64encode
-import emulated.nac
 # SRP config matching Apple's implementation
 srp.rfc5054_enable()
 srp.no_username_in_x()
