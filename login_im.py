@@ -28,14 +28,12 @@ from cryptography import x509
 from cryptography.x509.oid import NameOID
 
 import re
-import paramiko
 from dataclasses import dataclass
 from typing import Dict
 import subprocess
 import os
 import sys
 import uuid
-from enum import Enum
 
 from hardware import get_hardware_profile
 DEFAULT_HARDWARE = get_hardware_profile()
