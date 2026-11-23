@@ -1,12 +1,12 @@
 # NO NEED MACOS SERVER CONFIGURED
 
-# iBlueSender
+**iBlueSender**
 iMessage Proyect / Python Lang
 
 
-# PREPARE
+**PREPARE**
 
-**Windows**
+# Windows
 
 cd iBlueSender
 
@@ -14,7 +14,7 @@ python -m pip install requests pbkdf2 pycryptodome srp cryptography
 
 
 
-**MacOS**
+# MacOS
 
 cd iBlueSender
 
@@ -27,16 +27,14 @@ python3 -m pip install requests pbkdf2 pycryptodome srp cryptography
 
 
 
-# USAGE
+**USAGE**
 
-**For register new identity**
+# For register new identity
 
 python(3) login_im.py -e (AppleID) -p (Password)
 
 - You can received 2FA for SMS  or trust Device
-- 
 - BAA Authentication is implemented
-- 
 - You can Relogin in same account
 
 
@@ -55,4 +53,4 @@ cp tmp/session_cache.json ./
 
 # RECEIVED IMESSAGES NOTIFICATION
 
-**python(3) iMessage.py --listen
+python(3) iMessage.py --listen
