@@ -7,7 +7,9 @@ iMessage Proyect / Python Lang
 # PREPARE
 
 **Windows**
+
 cd iBlueSender
+
 python -m pip install requests pbkdf2 pycryptodome srp cryptography
 
 **MacOS**
