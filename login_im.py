@@ -33,6 +33,7 @@ import subprocess
 import os
 import sys
 import uuid
+from enum import Enum
 
 from hardware import get_hardware_profile
 DEFAULT_HARDWARE = get_hardware_profile()
