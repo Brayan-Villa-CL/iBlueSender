@@ -1,56 +1,94 @@
-# NO NEED MACOS SERVER CONFIGURED
+# iBlueSender
 
-**iBlueSender**
-iMessage Proyect / Python Lang
+> iMessage automation toolkit written in Python
 
+---
 
-**PREPARE**
+## Features
 
-# Windows
+- Register new iMessage identities
+- Send iMessages to any destination
+- Receive iMessage notifications
+- 2FA support (SMS & Trusted Device)
+- BAA Authentication
+- Session caching for quick relogin
 
-cd iBlueSender
+---
 
-python -m pip install requests pbkdf2 pycryptodome srp cryptography
+## Installation
 
+### Windows
 
+    cd iBlueSender
+    python -m pip install requests pbkdf2 pycryptodome srp cryptography
 
-# MacOS
+### macOS
 
-cd iBlueSender
+    cd iBlueSender
+    python3 -m venv Blue
+    source Blue/bin/activate
+    python3 -m pip install requests pbkdf2 pycryptodome srp cryptography
 
-python3 -m venv Blue
+---
 
-source Blue/bin/activate
+## Usage
 
-python3 -m pip install requests pbkdf2 pycryptodome srp cryptography
+### 1. Register Identity
 
+    python login_im.py -e user@icloud.com -p yourpassword
 
+    Options:
+    -e    Apple ID email
+    -p    Apple ID password
 
+    Note: You may receive a 2FA prompt via SMS or Trusted Device.
 
-**USAGE**
+### 2. Copy Session Cache
 
-# For register new identity
+After successful registration, copy the session to the working directory:
 
-python(3) login_im.py -e (AppleID) -p (Password)
+    cp tmp/session_cache.json ./
 
-- You can received 2FA for SMS  or trust Device
-- BAA Authentication is implemented
-- You can Relogin in same account
+### 3. Send iMessages
 
+    python iMessage.py --to destination@email.com --message "Hello!"
 
+    Options:
+    --to       Destination (email or phone)
+    --message  Message text
 
-**After register identity**
+    Examples:
 
-Copy session cached in actual directory
+    # Send to email
+    python iMessage.py --to user@icloud.com --message "Hello!"
 
-cp tmp/session_cache.json ./
+    # Send to phone
+    python iMessage.py --to tel:+1234567890 --message "Hello!"
 
+### 4. Listen for Messages
 
-# SEND IMESSAGES
+    python iMessage.py --listen
 
-**python(3) iMessage.py --to destination@phoneEmail.com --message "Your message"
+    Options:
+    --listen           Start listening for incoming messages
+    --listen-timeout   Timeout in seconds (optional)
 
+---
 
-# RECEIVED IMESSAGES NOTIFICATION
+## Project Structure
 
-python(3) iMessage.py --listen
+    iBlueSender/
+    ├── login_im.py          # Registration script
+    ├── query.py             # lookup identity's
+    ├── iMessage.py          # Send/Receive messages
+    ├── tmp/
+    │   └── session_cache.json
+    └── README.md
+
+---
+
+## Requirements
+
+- Python 3.8+
+- Active Apple ID
+- Network connection
